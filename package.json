@@ -7,9 +7,7 @@
   "author": "Natan <natanelia7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "webpack-watch": "webpack -w",
     "express-server": "nodemon ./index.js",
-    "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
     "start": "yarn express-server",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec --colors --compilers js:babel-core/register src/tests --recursive --require mocha-clean/brief",
     "test:watch": "yarn test -- --watch"
